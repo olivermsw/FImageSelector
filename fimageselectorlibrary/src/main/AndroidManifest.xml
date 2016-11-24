@@ -1,0 +1,11 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="me.olimsw.fimageselectorlibrary">
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <application android:allowBackup="true" android:label="@string/app_name"
+        android:supportsRtl="true">
+    <activity android:name=".ui.PhotoPagerActivity"></activity>
+        <activity android:name=".ui.PhotoSelectActivity"></activity>
+    </application>
+
+</manifest>
