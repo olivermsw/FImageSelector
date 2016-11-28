@@ -24,7 +24,6 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-
 import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -53,7 +52,7 @@ public class PhotoSelectActivity extends Activity implements View.OnClickListene
     private static final int PHOTO_REQUEST_TAKEPHOTO = 666;
     private Button btn_back;
     private TextView tv_title;
-    private Button btn_submit;
+    private TextView btn_submit;
     private RecyclerView rv_photo;
     private PhotoFolderInfo photoFolderInfo;
     private List<PhotoFolderInfo> folderList;
@@ -132,7 +131,7 @@ public class PhotoSelectActivity extends Activity implements View.OnClickListene
     private void initView() {
         btn_back = (Button) findViewById(R.id.btn_back);
         tv_title = (TextView) findViewById(R.id.tv_title);
-        btn_submit = (Button) findViewById(R.id.btn_submit);
+        btn_submit = (TextView) findViewById(R.id.btn_submit);
         rv_photo = (RecyclerView) findViewById(R.id.rv_photo);
         rl_titlebar = (RelativeLayout) findViewById(R.id.rl_titlebar);
         rv_photo.setLayoutManager(new GridLayoutManager(this, 3));
