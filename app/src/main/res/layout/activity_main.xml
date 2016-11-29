@@ -47,10 +47,10 @@
 
                 <EditText
                     android:id="@+id/et_count"
-                    android:inputType="number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:hint="请输入最大图片个数默认9张"
+                    android:inputType="number"
                     android:visibility="gone" />
             </LinearLayout>
 
@@ -63,15 +63,13 @@
             <GridView
                 android:id="@+id/gv"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:numColumns="auto_fit"
-                android:verticalSpacing="10dp"
-                android:horizontalSpacing="10dp"
+                android:layout_height="match_parent"
                 android:columnWidth="90dp"
+                android:gravity="center"
+                android:horizontalSpacing="10dp"
+                android:numColumns="auto_fit"
                 android:stretchMode="columnWidth"
-                android:gravity="center" ></GridView>
+                android:verticalSpacing="10dp"></GridView>
         </LinearLayout>
-
-
     </ScrollView>
 </RelativeLayout>
